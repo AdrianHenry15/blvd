@@ -3,8 +3,8 @@
     "name": "blvd",
     "icons": [
         {
-            "src": "",
-            "sizes": "64x64 32x32 24x24 16x16",
+            "src": "../src/assets/icons/clapperboard-16.png",
+            "sizes": "16x16 32x32 96x96",
             "type": ""
         }
     ],
