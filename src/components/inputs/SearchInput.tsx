@@ -5,10 +5,10 @@ const SearchInput = () => {
     return (
         <div className="flex items-center">
             <input
-                className="flex border-black border-2 px-4 py-4 rounded-s-md flex-1 w-96"
+                className="flex border-black border-y-2 border-l-2 px-4 py-2 rounded-s-sm flex-1 w-96"
                 placeholder="Inception, Breaking Bad, Westworld"
             />
-            <div className="bg-black text-white rounded-e-md" style={{ padding: "22px" }}>
+            <div className="bg-black text-white rounded-e-md" style={{ padding: "14px" }}>
                 <BsSearch />
             </div>
         </div>

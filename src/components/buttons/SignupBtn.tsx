@@ -7,7 +7,7 @@ interface ISignupBtnProps {
 
 const SignupBtn = (props: ISignupBtnProps) => {
     return (
-        <button className="flex py-2 px-4 bg-black text-white items-center rounded-md" onClick={props.onClick}>
+        <button className="flex py-2 px-4 bg-black text-white items-center rounded-md mx-2" onClick={props.onClick}>
             {props.text}
         </button>
     );

@@ -4,6 +4,7 @@ import SearchInput from "./inputs/SearchInput";
 import TransparentBtn from "./buttons/TransparentBtn";
 import LoginBtn from "./buttons/LoginBtn";
 import SignupBtn from "./buttons/SignupBtn";
+import Dropdown from "./dropdowns/Dropdown";
 
 const Navbar = () => {
     return (
@@ -15,15 +16,27 @@ const Navbar = () => {
                     <PiFilmSlateLight size={30} />
                 </div>
                 {/* SEARCH INPUT */}
-                <SearchInput />
-                {/* WRITE A REVIEW TRANSPARENT BUTTON */}
-                <TransparentBtn text="Write a Review" onClick={() => {}} />
+                <div className="flex">
+                    <div className="mr-10">
+                        <SearchInput />
+                    </div>
+                    {/* WRITE A REVIEW TRANSPARENT BUTTON */}
+                    <TransparentBtn text="Write a Review" onClick={() => {}} />
+                </div>
                 {/* LOG IN BUTTON  */}
-                <LoginBtn text="Log In" onClick={() => {}} />
-                {/* SIGN UP BUTTON  */}
-                <SignupBtn text="Sign Up" onClick={() => {}} />
+                <div className="flex">
+                    <LoginBtn text="Log In" onClick={() => {}} />
+                    {/* SIGN UP BUTTON  */}
+                    <SignupBtn text="Sign Up" onClick={() => {}} />
+                </div>
             </div>
             {/* STREAMING SERVICES DROPDOWNS -- NETFLIX | AMAZON | HULU | MORE */}
+            <div className="flex justify-center">
+                <Dropdown text="Netflix" />
+                <Dropdown text="Amazon" />
+                <Dropdown text="Hulu" />
+                <Dropdown text="More" />
+            </div>
         </nav>
     );
 };
