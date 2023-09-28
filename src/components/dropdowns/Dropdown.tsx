@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineChevronDown } from "react-icons/hi";
 
 interface IDropdownProps {
@@ -7,6 +7,7 @@ interface IDropdownProps {
 }
 
 const Dropdown = (props: IDropdownProps) => {
+    const [options, setOptions] = useState(false);
     return (
         <div className="flex">
             <div className="flex items-center p-6 cursor-pointer hover:border-black border-transparent border-b-4">

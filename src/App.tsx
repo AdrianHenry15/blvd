@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
     return (
-        <section className="w-full">
+        <section className="flex w-full">
             <Navbar />
         </section>
     );
