@@ -4,6 +4,7 @@ import LoginBtn from "./buttons/LoginBtn";
 import SignupBtn from "./buttons/SignupBtn";
 import { PiFilmSlateLight } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -18,21 +19,21 @@ const Navbar = () => {
 
                     {/* PAGE NAVIGATION  */}
                     <div className="md:flex md:items-center hidden">
-                        <a href="/" className="page-nav">
+                        <Link to="/" className="page-nav">
                             Home{" "}
-                        </a>
-                        <a href="/new" className="page-nav">
-                            New
-                        </a>
-                        <a href="trending" className="page-nav">
+                        </Link>
+                        <Link to="/just-added" className="page-nav">
+                            Just Added
+                        </Link>
+                        <Link to="trending" className="page-nav">
                             Trending
-                        </a>
-                        <a href="watchlist" className="page-nav">
+                        </Link>
+                        <Link to="watchlist" className="page-nav">
                             Watchlist
-                        </a>
-                        <a href="review" className="page-nav">
-                            Review
-                        </a>
+                        </Link>
+                        <Link to="reviews" className="page-nav">
+                            Reviews
+                        </Link>
                     </div>
                     {/* HAMBURGER FOR SMALL SCREENS */}
                     <div className="lg:hidden flex cursor-pointer right-0 absolute pr-6">
