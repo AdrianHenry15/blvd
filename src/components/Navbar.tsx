@@ -12,21 +12,21 @@ const Navbar = () => {
             <div className="flex flex-col lg:flex-row lg:justify-center justify-evenly items-center">
                 {/* LOGO AND NAME */}
                 <div className="flex items-center pb-6">
-                    <div className="flex items-center absolute left-0 pl-6">
+                    <div className="flex items-center md:absolute left-0 pl-6">
                         <span className="font-semibold text-2xl">blvd</span>
                         <PiFilmSlateLight size={30} />
                     </div>
 
                     {/* PAGE NAVIGATION  */}
-                    <div className="flex items-center">
+                    <div className="md:flex md:items-center hidden">
                         <span className="page-nav">Home</span>
                         <span className="page-nav">New</span>
                         <span className="page-nav">Trending</span>
                         <span className="page-nav">Watchlist</span>
                         <span className="page-nav">Review</span>
-                        <div className="lg:hidden flex cursor-pointer right-0 absolute pr-6">
-                            <RxHamburgerMenu size={20} />
-                        </div>
+                    </div>
+                    <div className="lg:hidden flex cursor-pointer right-0 absolute pr-6">
+                        <RxHamburgerMenu size={20} />
                     </div>
                 </div>
                 {/* SEARCH INPUT */}
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <SearchInput />
             </div>
             {/* STREAMING SERVICES DROPDOWNS -- NETFLIX | AMAZON | HULU | MORE */}
-            <div className="flex justify-center">
+            <div className="md:flex md:justify-center hidden">
                 <Dropdown text="Netflix" />
                 <Dropdown text="Amazon" />
                 <Dropdown text="Hulu" />
