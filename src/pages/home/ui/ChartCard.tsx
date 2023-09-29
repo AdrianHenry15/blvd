@@ -12,8 +12,11 @@ interface IChartCardProps {
 }
 
 const ChartCard = (props: IChartCardProps) => {
+    // make this string
     const [movies, setMovie] = useState([]);
 
+    // use 'backdrop_path' for picture
+    // go to 'Network' in console and go to now_playing to find json properties
     useEffect(() => {
         axios.get(props.fetchURL).then((response) => {
             setMovie(response.data.results);
