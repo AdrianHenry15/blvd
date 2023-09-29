@@ -16,10 +16,7 @@
         "isolatedModules": true,
         "jsx": "preserve",
         "incremental": true,
-        "types": ["node"],
-        "paths": {
-            "@/*": ["./*"]
-        }
+        "types": ["node"]
     },
     "include": ["**/*.ts", "**/*.tsx", "src/main.jsx"],
     "exclude": ["node_modules"]
